@@ -166,3 +166,149 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Pesquisa de Satisfação: regras específicas para o formulário. */
+.pesquisa {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.formulario fieldset {
+    min-width: 0;
+    margin: 0 0 24px;
+    padding: 20px;
+    border: 1px solid #c6d2de;
+    border-radius: 8px;
+}
+
+.formulario legend {
+    max-width: 100%;
+    padding: 0 8px;
+    color: #16324f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.linha-campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.campo {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    color: #243447;
+    background-color: white;
+    font: inherit;
+    border: 1px solid #899bac;
+    border-radius: 6px;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* O foco mostra qual campo está sendo utilizado. */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus,
+.formulario button:focus {
+    outline: 2px solid #16695c;
+    outline-offset: 3px;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.opcao {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.opcao input {
+    flex-shrink: 0;
+    margin-top: 6px;
+    accent-color: #16695c;
+}
+
+.estrelas .opcao {
+    padding: 8px 12px;
+    color: #16324f;
+    background-color: #e6f5f1;
+    border-radius: 6px;
+}
+
+.novidades {
+    margin: 20px 0;
+}
+
+.acoes-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.formulario button {
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-secundario {
+    background-color: #315a7e;
+}
+
+.botao-secundario:hover,
+.botao-secundario:focus-visible {
+    background-color: #234260;
+}
+
+/* Em celulares, os campos e os botões ocupam uma coluna. */
+@media (max-width: 600px) {
+    .pesquisa {
+        padding: 18px;
+    }
+
+    .formulario fieldset {
+        padding: 14px;
+    }
+
+    .linha-campos {
+        flex-direction: column;
+    }
+
+    .linha-campos .campo {
+        flex: auto;
+        width: 100%;
+    }
+
+    .acoes-formulario button {
+        width: 100%;
+    }
+}

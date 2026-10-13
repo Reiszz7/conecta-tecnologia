@@ -1,0 +1,78 @@
+CONECTA TECNOLOGIA — ATIVIDADE DE HTML E CSS
+
+Empresa e dados de contato fictícios. Projeto com HTML e CSS, sem JavaScript,
+banco de dados, bibliotecas ou dependências externas. O formulário é visual.
+
+COMO ABRIR
+1. Extraia o ZIP antes de abrir os arquivos.
+2. Coloque a pasta conecta-tecnologia dentro de Atividades Senai.
+3. No VS Code: File > Open Folder > selecione conecta-tecnologia.
+4. No Explorador de Arquivos do Windows, abra index.html com dois cliques.
+5. Teste Início, Sobre, Serviços, Contato e Satisfação pelo menu.
+6. Ao editar: Ctrl + S no VS Code e F5 no navegador.
+
+ARQUIVOS
+index.html: apresentação da empresa e imagem relacionada ao tema.
+sobre.html: informações da empresa, missão, valores e imagem.
+servicos.html: quatro serviços com nome e descrição em cartões.
+contato.html: informações fictícias de contato, sem formulário.
+satisfacao.html: formulário de satisfação com todos os campos da atividade.
+css/style.css: aparência compartilhada pelas cinco páginas.
+imagens/tecnologia.svg e imagens/equipe.svg: ilustrações locais.
+
+SVG é um formato de imagem que o navegador abre normalmente.
+Não é necessário instalar uma extensão para visualizar este site.
+Mantenha os nomes e a estrutura das pastas para os links funcionarem.
+
+PARA PUBLICAR UM NOVO REPOSITÓRIO PELO VS CODE
+Abra somente a pasta conecta-tecnologia. Use Ctrl + Shift + P,
+procure Publish to GitHub, entre na sua conta se necessário e siga
+as opções para publicar com o nome conecta-tecnologia.
+Antes de publicar, verifique se a pasta contém somente esta atividade.
+
+PARA ENTENDER O CÓDIGO
+header: cabeçalho com a marca e o menu.
+nav: área de navegação com links entre os arquivos.
+main: conteúdo principal de cada página.
+section: agrupa uma parte do conteúdo.
+article: representa cada cartão de serviço.
+footer: rodapé da página.
+class: identifica elementos para aplicar regras do CSS.
+href: endereço ou arquivo que um link abre.
+src: caminho do arquivo de uma imagem.
+alt: descrição da imagem para acessibilidade.
+display: flex: organiza elementos lado a lado.
+flex-wrap: wrap: permite que os elementos passem para a próxima linha.
+:hover: aplica um estilo quando o mouse está sobre o elemento.
+margin: espaço externo de um elemento.
+padding: espaço interno de um elemento.
+border-radius: arredonda os cantos.
+
+ATIVIDADE — PESQUISA DE SATISFAÇÃO
+O formulário contém dados do cliente, experiência, origem, serviço utilizado,
+recomendação, comentários e data. Também inclui nota de 1 a 5 estrelas,
+checkbox de novidades, required, indicação dos obrigatórios, foco e layout
+que se adapta a telas menores. Os serviços são os mesmos de servicos.html.
+
+Os campos de cada pergunta radio compartilham um name. As perguntas usam
+nomes diferentes para que suas respostas não interfiram entre si.
+label associa o texto a um campo. fieldset e legend agrupam perguntas.
+
+Enviar avaliação usa type="button": o botão é apenas demonstrativo e não
+envia dados, não mostra confirmação e não dispara a validação automática
+dos campos required. Isso atende ao objetivo de criar somente a interface.
+Limpar formulário usa type="reset" e restaura os valores iniciais dos campos.
+
+PARA ATUALIZAR SUA PASTA EXISTENTE
+1. Extraia este ZIP em uma pasta temporária.
+2. Copie satisfacao.html para a pasta atual conecta-tecnologia.
+3. Copie apenas o bloco final do CSS, começando no comentário
+   "Pesquisa de Satisfação", para o final do seu css/style.css.
+4. Em index.html, sobre.html, servicos.html e contato.html, antes de </nav>,
+   adicione: <a href="satisfacao.html">Satisfação</a>
+5. Salve, abra index.html e teste o menu, os campos e o botão Limpar.
+6. Faça Commit e Push no mesmo repositório, sem publicar outro projeto.
+
+Se você ainda não alterou o site anterior, pode copiar todos os HTML e o CSS
+atualizado deste ZIP para a pasta existente, substituindo só esses arquivos.
+Mantenha a pasta original do repositório para preservar a conexão com o Git.

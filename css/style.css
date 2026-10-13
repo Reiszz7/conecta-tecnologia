@@ -1,0 +1,168 @@
+/* O mesmo CSS é utilizado pelas quatro páginas. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #243447;
+    background-color: #f2f5f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 0;
+    color: white;
+    background-color: #16324f;
+}
+
+.marca {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.slogan {
+    margin: 4px 0 18px;
+    color: #d4e4f3;
+}
+
+/* Flex organiza o menu; wrap permite quebrar a linha em telas pequenas. */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a.ativo {
+    color: #16324f;
+    background-color: #bcebe4;
+}
+
+main {
+    padding: 32px 0;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #16324f;
+}
+
+h2 {
+    margin: 0 0 12px;
+    font-size: 23px;
+    color: #16324f;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+.painel {
+    margin-bottom: 24px;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #dce4ec;
+    border-radius: 10px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+}
+
+.texto,
+.imagem {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 18px;
+    color: white;
+    background-color: #16695c;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.botao:hover,
+.botao:focus-visible {
+    background-color: #104f45;
+}
+
+/* Os cartões dividem o espaço e se ajustam à largura disponível. */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 350px;
+    min-width: 0;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #dce4ec;
+    border-top: 4px solid #16695c;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.aviso {
+    padding: 14px;
+    background-color: #e6f5f1;
+    border-left: 4px solid #16695c;
+    border-radius: 4px;
+}
+
+footer {
+    padding: 20px 0;
+    color: #d4e4f3;
+    background-color: #16324f;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
